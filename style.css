@@ -415,13 +415,87 @@ body {
 
 /* ===== RESPONSIVE (celulares) ===== */
 @media (max-width: 600px) {
-    .name {
-        font-size: 32px;
+    .top-menu {
+        gap: 15px;
+        padding: 20px 10px;
+    }
+    .top-menu a {
+        font-size: 24px;
+        padding: 10px 18px;
     }
     .hero {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px 0;
+    }
+    .character {
+        width: 60vw;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .name-group {
+        align-items: center;
+    }
+    .name {
+        font-size: 40px;
+        margin-left: 0;
+        margin-top: -20px;
+        padding: 12px 20px;
+    }
+    .role {
+        font-size: 22px;
+        margin-left: 0;
+        padding: 12px 20px;
+    }
+    .welcome-box {
+        margin: -40px 10px 40px;
+        padding: 24px 20px;
+    }
+    .skills {
+        padding: 40px 15px 60px;
+        margin-left: 0;
+    }
+    .skills-title {
+        margin-bottom: -500px;
+        right: 0;
     }
     .skills-title h2 {
-        font-size: 30px;
+        font-size: 32px;
+    }
+    .skills-title .alt {
+        margin-left: 40px;
+    }
+    .deco-soft {
+        width: 200px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .skill-item {
+        margin-left: 0;
+    }
+    .skill-item h3 {
+        font-size: 28px;
+        gap: 10px;
+    }
+    .roman {
+        font-size: 20px;
+        padding: 5px 12px;
+    }
+    .skill-bar {
+        font-size: 14px;
+        padding: 14px 16px;
+    }
+    .contacts {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+    .ig-group, .phone-link, .mail-link {
+        font-size: 20px;
+    }
+    .insta-icon, .phone-icon, .mail-icon {
+        width: 28px;
+        height: 28px;
     }
 }
