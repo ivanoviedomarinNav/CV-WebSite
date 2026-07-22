@@ -438,9 +438,9 @@ body {
 }
 
 .contacts-white {
-    background: #ffffff;
+    background: #00aeef;
     border-top: 1px solid #ddd;
-    color: #2e2e2e;
+    color: #ffffff;
 }
 
 .contacts-white .ig-text,
@@ -449,7 +449,7 @@ body {
 .contacts-white .phone-link span,
 .contacts-white .mail-link,
 .contacts-white .mail-link span {
-    color: #2e2e2e;
+    color: #ffffff;
     text-decoration: none;
 }
 
