@@ -444,9 +444,30 @@ body {
 }
 
 .contacts-white .ig-text,
+.contacts-white .ig-text h2,
 .contacts-white .phone-link,
-.contacts-white .mail-link {
+.contacts-white .phone-link span,
+.contacts-white .mail-link,
+.contacts-white .mail-link span {
     color: #2e2e2e;
+    text-decoration: none;
+}
+
+.contacts-white .contacts h2,
+.contacts-white h2 {
+    color: #2e2e2e;
+}
+
+.contacts-white .ig-group:hover {
+    transform: scale(1.1);
+}
+
+.contacts-white .phone-link:hover {
+    transform: scale(1.1);
+}
+
+.contacts-white .mail-link:hover {
+    transform: scale(1.1);
 }
 
 .contacts-white .phone-icon,
@@ -529,6 +550,11 @@ body {
         padding: 14px 16px;
     }
     .contacts {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+    .contacts-white {
         flex-direction: column;
         gap: 20px;
         padding: 30px 20px;
