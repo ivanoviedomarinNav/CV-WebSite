@@ -250,19 +250,19 @@ body {
 
 /* ===== SKILLS SECTION ===== */
 .skills {
-    padding: 60px 40px 600px;
+    padding: 60px 40px 80px;
     margin-left: 50px;
 }
 
 .skills-title {
     position: relative;
     margin-bottom: -780px;
-     right: 50px;
+     right: -70px;
 }
 
 .skills-title h2 {
     font-family: 'Anton', sans-serif;
-    font-size: 44px;
+    font-size: 52px;
     display: inline-block;
     width: fit-content;
     background: #d9d9d9;
@@ -282,6 +282,7 @@ body {
 .skill-item {
     max-width: 900px;
     margin: 0 auto 45px;
+    margin-left: 700px;
 }
 
 .skill-item h3 {
@@ -297,17 +298,12 @@ body {
     width: 420px;
     height: auto;
     margin-top: 80px;
-    margin-left: 5px;
+    margin-left: 30px;
     
 }
 
 .deco-fondo {
-    position: absolute;
-    top: 0;
-    right: 60px;
-    width: 320px;
-    height: auto;
-    transform: rotate(19deg);
+    display: none;
 }
 
 .roman {
@@ -329,10 +325,87 @@ body {
 
 /* ===== FOOTER CONTACTS ===== */
 .contacts {
-    background: #2a2f8f;
+    background: #00aeef;
     color: #ffffff;
     text-align: center;
     padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.ig-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.ig-group:hover {
+    transform: scale(1.1);
+}
+
+.ig-text {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.insta-icon {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.insta-icon:hover {
+    transform: scale(1.2);
+}
+
+.phone-icon {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.phone-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    transition: transform 0.3s ease;
+}
+
+.phone-link:hover {
+    transform: scale(1.1);
+}
+
+.mail-group {
+    display: flex;
+    align-items: center;
+}
+
+.mail-icon {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.mail-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    transition: transform 0.3s ease;
+}
+
+.mail-link:hover {
+    transform: scale(1.1);
 }
 
 .contacts h2 {
