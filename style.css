@@ -413,6 +413,48 @@ body {
     font-size: 28px;
 }
 
+/* ===== ABOUT PAGE ===== */
+.about-page {
+    background: #ffffff;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.about-hero h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 52px;
+    color: #2e2e2e;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contacts-white {
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    color: #2e2e2e;
+}
+
+.contacts-white .ig-text,
+.contacts-white .phone-link,
+.contacts-white .mail-link {
+    color: #2e2e2e;
+}
+
+.contacts-white .phone-icon,
+.contacts-white .mail-icon,
+.contacts-white .insta-icon {
+    filter: none;
+}
+
 /* ===== RESPONSIVE (celulares) ===== */
 @media (max-width: 600px) {
     .top-menu {
