@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 391.6 525.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4ac2f1;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #cdcccc;
+      }
+
+      .cls-4 {
+        font-size: 29px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #fff;
+        font-family: Anton-Regular, Anton;
+      }
+
+      .cls-3 {
+        fill: #444;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-size: 16px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_4" data-name="Capa 4">
+    <rect class="cls-2" x="16.08" width="271.22" height="511.69"/>
+  </g>
+  <g id="Capa_1" data-name="Capa 1">
+    <rect class="cls-3" x="45.44" y="22.37" width="338.33" height="475.34"/>
+    <rect class="cls-1" x="311.66" width="37.05" height="37.05"/>
+    <rect class="cls-1" x="337.63" y="50.33" width="25.51" height="25.51"/>
+    <rect class="cls-1" x="373.08" y="31.81" width="18.52" height="18.52"/>
+    <rect class="cls-1" y="352.25" width="8.39" height="133.51"/>
+    <rect class="cls-1" x="28.53" y="517.28" width="98.56" height="8.39"/>
+  </g>
+  <g id="Capa_5" data-name="Capa 5">
+    <text class="cls-4" transform="translate(61.49 60.87)"><tspan x="0" y="0">Soft Skills</tspan></text>
+    <text class="cls-5" transform="translate(54.93 95.17)"><tspan x="0" y="0">. Teamwork and Effective Communication</tspan><tspan x="0" y="38.4">. Creativity and Initiative</tspan><tspan x="0" y="76.8">. Friendliness and Good Customer Service</tspan><tspan x="0" y="115.2">. Great Patience with Extensive and Tedious </tspan><tspan class="cls-6" x="281.64" y="115.2">T</tspan><tspan x="287.67" y="115.2">asks</tspan><tspan x="0" y="153.6">. Works Well Under Pressure</tspan><tspan x="0" y="192">. Attention to Detail</tspan><tspan x="0" y="230.4">. Strong Problem-Solving Skills</tspan><tspan x="0" y="268.8">. Adaptability to Change</tspan><tspan x="0" y="307.2">. Time Management</tspan><tspan x="0" y="345.6">. Critical Thinking</tspan><tspan x="0" y="384">. Leadership and Decision Making</tspan></text>
+  </g>
+</svg>

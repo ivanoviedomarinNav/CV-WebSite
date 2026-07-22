@@ -1,0 +1,354 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: linear-gradient(to bottom, #00aeef 0px, #7fd4f5 650px, #ffffff 950px);
+    overflow-x: hidden;
+    color: #2e2e2e;
+}
+
+/* ===== FONDO DE CÓDIGO ===== */
+.code-background {
+    position: absolute;
+    top: 480px;
+    left: 0;
+    width: 100%;
+    height: 1400px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ===== MENÚ SUPERIOR ===== */
+.top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 30px 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.top-menu a {
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    font-size: 38px;
+    color: #2e2e2e;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 14px 30px;
+    display: inline-block;
+    transform: rotate(-6deg);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.top-menu a:nth-child(even) {
+    transform: rotate(4deg);
+}
+
+.top-menu a:hover {
+    color: #ff4d6d;
+    transform: rotate(0deg) scale(1.1);
+}
+
+/* ===== HERO (PERSONAJE + NOMBRE) ===== */
+.hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px 0;
+    padding-left: 5%;
+    text-align: left;
+}
+
+.bg-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.icon {
+    position: absolute;
+    width: 50px;
+    opacity: 0.25;
+    animation: float 4s ease-in-out infinite;
+}
+
+.icon1 { top: 25%; left: 45%; animation: float1 6s ease-in-out infinite; }
+.icon2 { top: 45%; left: 5%;  animation: float2 8s ease-in-out infinite; }
+.icon3 { top: 2%; left: 12%; animation: float3 7s ease-in-out infinite; }
+.icon4 { top: 40%; left: 85%; animation: float1 9s ease-in-out infinite reverse; }
+.icon5 { top: 15%; left: 90%; animation: float2 5.5s ease-in-out infinite; }
+.icon6 { top: 75%; left: 20%; animation: float3 6.5s ease-in-out infinite; }
+.icon7 { top: 20%; left: 65%; animation: float1 7.5s ease-in-out infinite reverse; }
+.icon8 { top: 65%; left: 60%; animation: float2 6.8s ease-in-out infinite; }
+.icon9 { top: 88%; left: 3%; animation: float3 8.5s ease-in-out infinite; }
+.icon10 { top: 25%; left: 25%; animation: float1 5s ease-in-out infinite reverse; }
+.icon11 { top: 30%; left: 75%; animation: float2 7.2s ease-in-out infinite; }
+.icon12 { top: 62%; left: 35%; animation: float1 6.3s ease-in-out infinite reverse; }
+.icon13 { top: 18%;  left: 35%; animation: float3 8.2s ease-in-out infinite; }
+.icon14 { top: 70%; left: 90%; animation: float2 5.8s ease-in-out infinite reverse; }
+.icon15 { top: 50%; left: 15%; animation: float1 9.5s ease-in-out infinite; }
+.icon16 { top: 68%; left: 77%; animation: float3 6.7s ease-in-out infinite; }
+.icon17 { top: 17%;  left: 4%;  animation: float1 7.5s ease-in-out infinite; }
+.icon18 { top: 5%;  left: 78%; animation: float2 6.2s ease-in-out infinite reverse; }
+.icon19 { top: 76%; left: 53%; animation: float3 8s ease-in-out infinite; }
+
+.icon3, .icon8 {
+    width: 110px;
+}
+
+.icon13, .icon14, .icon16, .icon18 {
+    filter: brightness(0) invert(1);
+}
+
+.character {
+    width: 37vw;
+    max-width: 470px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-left: 12%;
+    margin-top: -10px;
+    animation: slide-in-flipped 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-flipped {
+    0% {
+        transform: translateX(-120%) scaleX(-1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scaleX(-1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float1 {
+    0%   { transform: translate(0px, 0px) rotate(0deg); }
+    25%  { transform: translate(15px, -20px) rotate(5deg); }
+    50%  { transform: translate(-10px, -35px) rotate(-3deg); }
+    75%  { transform: translate(-20px, -10px) rotate(4deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes float2 {
+    0%   { transform: translate(0px, 0px) rotate(0deg); }
+    30%  { transform: translate(-18px, -15px) rotate(-6deg); }
+    60%  { transform: translate(20px, -30px) rotate(4deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes float3 {
+    0%   { transform: translate(0px, 0px) rotate(0deg); }
+    20%  { transform: translate(10px, -25px) rotate(3deg); }
+    55%  { transform: translate(-15px, -10px) rotate(-5deg); }
+    80%  { transform: translate(-5px, -30px) rotate(2deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.name-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: slide-in-right 1.2s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.name {
+    font-family: 'Anton', sans-serif;
+    font-size: 78px;
+    color: #2e2e2e;
+    line-height: 1.1;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px 40px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-left: 40px;
+    margin-top: -50px;
+}
+
+.role {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    color: #2e2e2e;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/* ===== WELCOME BOX ===== */
+.welcome-box {
+    background: #2a2f8f;
+    color: #ffffff;
+    max-width: 680px;
+    margin: -80px auto 60px 12%;
+    padding: 32px 38px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 3;
+    animation: slide-in 1.2s ease-out;
+}
+
+.welcome-box::before {
+    content: "Welcome!";
+    position: absolute;
+    top: -22px;
+    left: 40px;
+    background: #4a4fc7;
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    font-size: 14px;
+    padding: 6px 20px;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.welcome-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills {
+    padding: 60px 40px 600px;
+    margin-left: 50px;
+}
+
+.skills-title {
+    position: relative;
+    margin-bottom: -780px;
+     right: 50px;
+}
+
+.skills-title h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 44px;
+    display: inline-block;
+    width: fit-content;
+    background: #d9d9d9;
+    padding: 6px 22px;
+    transform: rotate(-3deg);
+    position: relative;
+    z-index: 1;
+}
+
+.skills-title .alt {
+    display: block;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.skill-item {
+    max-width: 900px;
+    margin: 0 auto 45px;
+}
+
+.skill-item h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 46px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+.deco-soft {
+    display: block;
+    width: 420px;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 5px;
+    
+}
+
+.deco-fondo {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    width: 320px;
+    height: auto;
+    transform: rotate(19deg);
+}
+
+.roman {
+    background: #2e2e2e;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 8px 18px;
+}
+
+.skill-bar {
+    background: #4fc3f7;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 18px 24px;
+    border-left: 8px solid #2a2f8f;
+    text-transform: uppercase;
+}
+
+/* ===== FOOTER CONTACTS ===== */
+.contacts {
+    background: #2a2f8f;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacts h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+}
+
+/* ===== RESPONSIVE (celulares) ===== */
+@media (max-width: 600px) {
+    .name {
+        font-size: 32px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .skills-title h2 {
+        font-size: 30px;
+    }
+}
