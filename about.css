@@ -211,16 +211,20 @@
 }
 
 .certification-card {
-    background: #2e2e2e;
-    padding: 16px 32px;
-    border-radius: 6px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px 24px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 .certification-card h3 {
     font-family: 'Anton', sans-serif;
-    font-size: 28px;
-    color: #ffffff;
+    font-size: 24px;
+    color: #00aeef;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #00aeef;
 }
 
 /* ===== RESPONSIVE (celulares) ===== */
