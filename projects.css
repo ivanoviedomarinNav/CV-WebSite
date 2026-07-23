@@ -20,11 +20,7 @@ body {
 .about-hero h1 {
     font-family: 'Anton', sans-serif;
     font-size: 60px;
-    color: #ffffff;
-    background: #00aeef;
-    padding: 12px 40px;
-    display: inline-block;
-    transform: rotate(-3deg);
+    color: #2e2e2e;
 }
 
 .about-content {
