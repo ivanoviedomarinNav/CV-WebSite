@@ -38,21 +38,41 @@ body {
     text-decoration: none;
     font-family: 'Anton', sans-serif;
     font-size: 38px;
-    color: #000000;
-    background: #7ec8e3;
+    color: #2e2e2e;
+    background: #64C8E8;
     padding: 14px 30px;
     display: inline-block;
     transform: rotate(-6deg);
     transition: transform 0.3s ease, color 0.3s ease;
+    animation: tremble-menu 4s ease-in-out infinite;
+}
+
+.top-menu a:nth-child(1) { animation-delay: 0s; }
+.top-menu a:nth-child(2) { animation-delay: 0.3s; }
+.top-menu a:nth-child(3) { animation-delay: 0.6s; }
+.top-menu a:nth-child(4) { animation-delay: 0.9s; }
+.top-menu a:nth-child(5) { animation-delay: 1.2s; }
+
+@keyframes tremble-menu {
+    0%, 100% { transform: rotate(-6deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(-7deg); }
 }
 
 .top-menu a:nth-child(even) {
-    transform: rotate(4deg);
+    animation-name: tremble-menu-even;
+}
+
+@keyframes tremble-menu-even {
+    0%, 100% { transform: rotate(4deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(3deg); }
 }
 
 .top-menu a:hover {
     color: #ff4d6d;
     transform: rotate(0deg) scale(1.1);
+    animation: none;
 }
 
 /* ===== HERO (PERSONAJE + NOMBRE) ===== */
@@ -122,8 +142,13 @@ body {
     z-index: 2;
     margin-left: 12%;
     margin-top: -10px;
-    animation: slide-in-flipped 1.2s ease-out;
-    animation-fill-mode: forwards;
+    animation: slide-in-flipped 1.2s ease-out forwards, tremble-char 4s ease-in-out 1.2s infinite;
+}
+
+@keyframes tremble-char {
+    0%, 100% { transform: scaleX(-1) rotate(0deg); }
+    25% { transform: scaleX(-1) rotate(1deg); }
+    75% { transform: scaleX(-1) rotate(-1deg); }
 }
 
 @keyframes slide-in-flipped {
@@ -195,7 +220,7 @@ body {
     font-size: 78px;
     color: #2e2e2e;
     line-height: 1.1;
-    background: rgba(255, 255, 255, 0.3);
+    background: #d9d9d9;
     padding: 20px 40px;
     display: inline-block;
     position: relative;
@@ -204,17 +229,57 @@ body {
     margin-top: -50px;
 }
 
+.name::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 12px;
+    right: -12px;
+    height: 100%;
+    background: #888888;
+    border-radius: 4px;
+    transform: rotate(5deg);
+    z-index: -1;
+    animation: tremble-name 3s ease-in-out infinite;
+}
+
+@keyframes tremble-name {
+    0%, 100% { transform: rotate(5deg); }
+    25% { transform: rotate(6deg); }
+    75% { transform: rotate(4deg); }
+}
+
 .role {
     font-family: 'Anton', sans-serif;
     font-size: 32px;
     color: #2e2e2e;
-    background: rgba(255, 255, 255, 0.3);
+    background: #d9d9d9;
     padding: 16px 30px;
     display: inline-block;
     position: relative;
     z-index: 2;
     margin-left: 40px;
     margin-top: 20px;
+}
+
+.role::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 10px;
+    right: -10px;
+    height: 100%;
+    background: #888888;
+    border-radius: 4px;
+    transform: rotate(-2deg);
+    z-index: -1;
+    animation: tremble-role 3.5s ease-in-out infinite;
+}
+
+@keyframes tremble-role {
+    0%, 100% { transform: rotate(-2deg); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(-1deg); }
 }
 
 /* ===== WELCOME BOX ===== */
