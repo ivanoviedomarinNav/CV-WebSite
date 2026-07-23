@@ -425,7 +425,7 @@ body {
 
 .about-hero {
     text-align: left;
-    padding: 60px 20px 30px 20px;
+    padding: 60px 20px 30px 10px;
 }
 
 .about-hero h1 {
@@ -437,15 +437,15 @@ body {
 .about-content {
     max-width: 700px;
     margin: 0;
-    margin-left: 20px;
-    padding: 0 30px 60px;
+    margin-left: 0;
+    padding: 0 30px 60px 10px;
     position: relative;
 }
 
 .about-photo-wrapper {
     position: relative;
     z-index: 2;
-    margin-left: -20px;
+    margin-left: 0;
     margin-bottom: -60px;
 }
 
