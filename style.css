@@ -424,11 +424,8 @@ body {
 }
 
 .about-hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 60px 30px;
+    text-align: center;
+    padding: 60px 20px 30px;
 }
 
 .about-hero h1 {
@@ -437,12 +434,26 @@ body {
     color: #2e2e2e;
 }
 
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 30px 60px;
+    position: relative;
+}
+
+.about-photo-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-left: 30px;
+    margin-bottom: -60px;
+}
+
 .about-photo {
-    width: 300px;
+    width: 220px;
     height: auto;
     border-radius: 10px;
     background: #ffffff;
-    padding: 15px;
+    padding: 12px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
@@ -456,9 +467,11 @@ body {
 
 .about-text-box {
     background: #ffffff;
-    padding: 30px 35px;
+    padding: 50px 35px 30px;
     border-radius: 8px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 1;
 }
 
 .about-text-box strong {
@@ -595,17 +608,22 @@ body {
         height: 28px;
     }
     .about-hero {
-        flex-direction: column;
         padding: 40px 20px 20px;
-        gap: 20px;
     }
     .about-hero h1 {
         font-size: 36px;
     }
+    .about-content {
+        padding: 0 15px 40px;
+    }
+    .about-photo-wrapper {
+        margin-left: 0;
+        margin-bottom: -40px;
+    }
     .about-photo {
-        width: 200px;
+        width: 150px;
     }
     .about-text-box {
-        padding: 20px;
+        padding: 40px 20px 20px;
     }
 }
