@@ -230,8 +230,9 @@
 }
 
 .cert-btn {
-    display: inline-block;
+    display: block;
     margin-top: 12px;
+    text-align: center;
     background: #00aeef;
     color: #ffffff;
     font-family: 'Anton', sans-serif;
