@@ -210,6 +210,19 @@
     border-radius: 6px;
 }
 
+.certification-card {
+    background: #2e2e2e;
+    padding: 16px 32px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.certification-card h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+}
+
 /* ===== RESPONSIVE (celulares) ===== */
 @media (max-width: 600px) {
     .about-header {
