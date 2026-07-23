@@ -249,32 +249,6 @@ body {
     line-height: 1.6;
 }
 
-/* ===== NAV CARDS ===== */
-.nav-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 20px 60px;
-    flex-wrap: wrap;
-}
-
-.nav-card {
-    background: #4fc3f7;
-    color: #ffffff;
-    font-family: 'Anton', sans-serif;
-    font-size: 22px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 18px 40px;
-    border-left: 8px solid #2a2f8f;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.nav-card:hover {
-    background: #00aeef;
-    transform: scale(1.05);
-}
-
 /* ===== SKILLS SECTION ===== */
 .skills {
     padding: 60px 40px 80px;
