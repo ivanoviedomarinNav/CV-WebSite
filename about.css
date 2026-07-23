@@ -192,11 +192,13 @@
 
 .about-white-space {
     background: #ffffff;
-    height: 250px;
+    height: auto;
+    min-height: 250px;
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     padding: 50px 60px 0;
 }
 
@@ -216,7 +218,7 @@
     padding: 20px 24px;
     width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .certification-card h3 {
