@@ -427,11 +427,13 @@ body {
     display: flex;
     align-items: flex-end;
     gap: 30px;
-    padding: 60px 20px 30px 50px;
+    padding: 0px 20px 20px 50px;
+    margin-top: -90px;
 }
 
 .about-hero-left {
     flex-shrink: 0;
+    margin-top: 160px;
 }
 
 .about-hero h1 {
@@ -450,8 +452,9 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-left: 650px;
+    margin-left: 920px;
     margin-bottom: 20px;
+    margin-top: 160px;
 }
 
 .logo-box {
@@ -463,18 +466,26 @@ body {
 
 .logo-box:nth-child(2) {
     transform: rotate(-2deg);
+    margin-top: 20px;
+    margin-left: -80px;
 }
 
 .about-logo {
-    width: 180px;
+    width: 340px;
     height: auto;
     display: block;
+}
+
+.logo-box:nth-child(1) {
+    margin-left: 60px;
+    margin-top: -40px;
 }
 
 .about-content {
     max-width: 700px;
     margin: 0;
     margin-left: 170px;
+    margin-top: 0px;
     padding: 0 30px 60px 0;
     position: relative;
     font-size: 16px;
