@@ -425,7 +425,7 @@ body {
 
 .about-hero {
     text-align: left;
-    padding: 60px 20px 30px 120px;
+    padding: 60px 20px 30px 10px;
 }
 
 .about-hero h1 {
@@ -438,7 +438,7 @@ body {
 .about-content {
     max-width: 700px;
     margin: 0;
-    margin-left: 120px;
+    margin-left: 170px;
     padding: 0 30px 60px 0;
     position: relative;
     font-size: 16px;
