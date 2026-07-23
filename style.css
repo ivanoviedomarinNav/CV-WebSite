@@ -418,6 +418,11 @@ body {
     background: #ffffff;
 }
 
+.about-page .icon {
+    opacity: 0.15;
+    filter: invert(53%) sepia(82%) saturate(481%) hue-rotate(164deg) brightness(101%) contrast(92%);
+}
+
 .about-hero {
     text-align: center;
     padding: 60px 20px 30px;
