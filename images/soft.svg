@@ -1,54 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 391.6 525.67">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510.7 642.59">
   <defs>
     <style>
       .cls-1 {
-        fill: #4ac2f1;
+        font-size: 21px;
       }
 
-      .cls-1, .cls-2, .cls-3 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #cdcccc;
-      }
-
-      .cls-4 {
-        font-size: 29px;
-      }
-
-      .cls-4, .cls-5 {
+      .cls-1, .cls-2 {
         fill: #fff;
         font-family: Anton-Regular, Anton;
       }
 
-      .cls-3 {
-        fill: #444;
+      .cls-2 {
+        font-size: 44px;
       }
 
-      .cls-6 {
-        letter-spacing: -.02em;
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #55c1f0;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
       }
 
       .cls-5 {
-        font-size: 16px;
+        fill: #2e2e2f;
+      }
+
+      .cls-7 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: #283485;
+        opacity: .82;
       }
     </style>
   </defs>
   <g id="Capa_4" data-name="Capa 4">
-    <rect class="cls-2" x="16.08" width="271.22" height="511.69"/>
+    <rect class="cls-6" x="29.69" y="606.42" width="360.42" height="36.17"/>
+    <rect class="cls-6" x="29.82" y="553.35" width="218.04" height="36.17"/>
+    <rect class="cls-6" x="29.69" y="505.62" width="257.66" height="36.17"/>
+    <rect class="cls-6" x="29.69" y="455.22" width="291.22" height="36.17"/>
+    <rect class="cls-6" x="29.69" y="402.15" width="341.32" height="36.17"/>
+    <rect class="cls-6" x="29.82" y="351.75" width="257.53" height="36.17"/>
+    <rect class="cls-6" x="29.82" y="301.52" width="339.03" height="36.17"/>
+    <rect class="cls-6" x="29.82" y="251.28" width="480.87" height="36.17"/>
+    <rect class="cls-6" x="29.82" y="201.98" width="435.78" height="36.17"/>
+    <rect class="cls-6" x="29.82" y="146.5" width="293.18" height="36.17"/>
+    <rect class="cls-6" x="29.82" y="99.85" width="425.3" height="36.17"/>
+    <rect class="cls-4" x="41.65" y="596.16" width="339.03" height="36.17"/>
+  </g>
+  <g id="Capa_3" data-name="Capa 3">
+    <rect class="cls-4" x="40.6" y="142.03" width="263.53" height="31.28"/>
+    <rect class="cls-4" x="40.6" y="188.17" width="414.52" height="41.42"/>
+    <rect class="cls-4" x="40.6" y="243.21" width="464.16" height="34.75"/>
+    <rect class="cls-4" x="40.6" y="291.92" width="317.48" height="36.17"/>
+    <rect class="cls-4" x="40.6" y="343.46" width="227.88" height="36.17"/>
+    <rect class="cls-4" x="40.6" y="394" width="317.48" height="36.17"/>
+    <rect class="cls-4" x="40.6" y="444.54" width="263.53" height="36.17"/>
+    <rect class="cls-4" x="40.6" y="495.08" width="232.08" height="36.17"/>
+    <rect class="cls-4" x="41.65" y="545.62" width="198.44" height="36.17"/>
+  </g>
+  <g id="Capa_2" data-name="Capa 2">
+    <rect class="cls-4" x="40.6" y="86.98" width="400.89" height="39.84"/>
+    <text class="cls-1" transform="translate(60.96 117.84)"><tspan x="0" y="0">/ Teamwork and Effective Communication</tspan><tspan x="0" y="50.4">/ Creativity and Initiative</tspan><tspan x="0" y="100.8">/ Friendliness and Good Customer Service</tspan><tspan x="0" y="151.2">/ Great Patience with Extensive and Tedious </tspan><tspan class="cls-7" x="373.37" y="151.2">T</tspan><tspan class="cls-3" x="381.28" y="151.2">asks</tspan><tspan x="0" y="201.6">/ Works Well Under Pressure</tspan><tspan x="0" y="252">/ Attention to Detail</tspan><tspan x="0" y="302.4">/ Strong Problem-Solving Skills</tspan><tspan x="0" y="352.8">/ Adaptability to Change</tspan><tspan x="0" y="403.2">/ Time Management</tspan><tspan x="0" y="453.6">/ Critical Thinking</tspan><tspan x="0" y="504">/ Leadership and Decision Making</tspan></text>
   </g>
   <g id="Capa_1" data-name="Capa 1">
-    <rect class="cls-3" x="45.44" y="22.37" width="338.33" height="475.34"/>
-    <rect class="cls-1" x="311.66" width="37.05" height="37.05"/>
-    <rect class="cls-1" x="337.63" y="50.33" width="25.51" height="25.51"/>
-    <rect class="cls-1" x="373.08" y="31.81" width="18.52" height="18.52"/>
-    <rect class="cls-1" y="352.25" width="8.39" height="133.51"/>
-    <rect class="cls-1" x="28.53" y="517.28" width="98.56" height="8.39"/>
-  </g>
-  <g id="Capa_5" data-name="Capa 5">
-    <text class="cls-4" transform="translate(61.49 60.87)"><tspan x="0" y="0">Soft Skills</tspan></text>
-    <text class="cls-5" transform="translate(54.93 95.17)"><tspan x="0" y="0">. Teamwork and Effective Communication</tspan><tspan x="0" y="38.4">. Creativity and Initiative</tspan><tspan x="0" y="76.8">. Friendliness and Good Customer Service</tspan><tspan x="0" y="115.2">. Great Patience with Extensive and Tedious </tspan><tspan class="cls-6" x="281.64" y="115.2">T</tspan><tspan x="287.67" y="115.2">asks</tspan><tspan x="0" y="153.6">. Works Well Under Pressure</tspan><tspan x="0" y="192">. Attention to Detail</tspan><tspan x="0" y="230.4">. Strong Problem-Solving Skills</tspan><tspan x="0" y="268.8">. Adaptability to Change</tspan><tspan x="0" y="307.2">. Time Management</tspan><tspan x="0" y="345.6">. Critical Thinking</tspan><tspan x="0" y="384">. Leadership and Decision Making</tspan></text>
+    <rect class="cls-5" width="212.5" height="76.89"/>
+    <text class="cls-2" transform="translate(16.85 52.59)"><tspan x="0" y="0">Soft Skills</tspan></text>
   </g>
 </svg>

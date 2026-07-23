@@ -27,7 +27,7 @@ body {
 .top-menu {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 70px;
     flex-wrap: wrap;
     padding: 30px 5%;
     position: relative;
@@ -42,8 +42,10 @@ body {
     background: #64C8E8;
     padding: 14px 30px;
     display: inline-block;
+    position: relative;
     transform: rotate(-6deg);
     transition: transform 0.3s ease, color 0.3s ease;
+    box-shadow: 12px 10px 0 4px rgba(42, 47, 143, 0.5);
     animation: tremble-menu 4s ease-in-out infinite;
 }
 
@@ -142,13 +144,7 @@ body {
     z-index: 2;
     margin-left: 12%;
     margin-top: -10px;
-    animation: slide-in-flipped 1.2s ease-out forwards, tremble-char 4s ease-in-out 1.2s infinite;
-}
-
-@keyframes tremble-char {
-    0%, 100% { transform: scaleX(-1) rotate(0deg); }
-    25% { transform: scaleX(-1) rotate(1deg); }
-    75% { transform: scaleX(-1) rotate(-1deg); }
+    animation: slide-in-flipped 1.2s ease-out forwards;
 }
 
 @keyframes slide-in-flipped {
@@ -217,61 +213,63 @@ body {
 
 .name {
     font-family: 'Anton', sans-serif;
+    text-decoration: none;
     font-size: 78px;
     color: #2e2e2e;
     line-height: 1.1;
-    background: #d9d9d9;
+    background: transparent;
     padding: 20px 40px;
     display: inline-block;
     position: relative;
     z-index: 2;
     margin-left: 40px;
     margin-top: -50px;
+    transform: rotate(-6deg);
 }
 
 .name::before {
     content: "";
     position: absolute;
-    bottom: -8px;
-    left: 12px;
-    right: -12px;
+    top: 0;
+    left: -30px;
+    width: calc(100% + 30px);
     height: 100%;
-    background: #888888;
-    border-radius: 4px;
-    transform: rotate(5deg);
+    background: rgba(42, 47, 143, 0.5);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
     z-index: -1;
     animation: tremble-name 3s ease-in-out infinite;
 }
 
 @keyframes tremble-name {
-    0%, 100% { transform: rotate(5deg); }
-    25% { transform: rotate(6deg); }
-    75% { transform: rotate(4deg); }
+    0%, 100% { transform: rotate(-6deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(-7deg); }
 }
 
 .role {
     font-family: 'Anton', sans-serif;
+    text-decoration: none;
     font-size: 32px;
     color: #2e2e2e;
-    background: #d9d9d9;
+    background: transparent;
     padding: 16px 30px;
     display: inline-block;
     position: relative;
     z-index: 2;
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 0px;
+    transform: rotate(4deg);
 }
 
 .role::before {
     content: "";
     position: absolute;
-    bottom: -8px;
-    left: 10px;
-    right: -10px;
+    top: 0;
+    left: -30px;
+    width: calc(100% + 30px);
     height: 100%;
-    background: #888888;
-    border-radius: 4px;
-    transform: rotate(-2deg);
+    background: rgba(42, 47, 143, 0.5);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
     z-index: -1;
     animation: tremble-role 3.5s ease-in-out infinite;
 }
@@ -282,12 +280,51 @@ body {
     75% { transform: rotate(-1deg); }
 }
 
+.name:hover, .role:hover, .cv-title:hover {
+    color: #ff4d6d;
+    animation: none;
+}
+
+.cv-title {
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    font-size: 32px;
+    color: #2e2e2e;
+    background: transparent;
+    padding: 0 40px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-left: 40px;
+    margin-top: -20px;
+    transform: rotate(12deg);
+}
+
+.cv-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: calc(100% + 30px);
+    height: 100%;
+    background: rgba(42, 47, 143, 0.5);
+    clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+    z-index: -1;
+    animation: tremble-cv 3s ease-in-out infinite;
+}
+
+@keyframes tremble-cv {
+    0%, 100% { transform: rotate(12deg); }
+    25% { transform: rotate(13deg); }
+    75% { transform: rotate(11deg); }
+}
+
 /* ===== WELCOME BOX ===== */
 .welcome-box {
     background: #2a2f8f;
     color: #ffffff;
     max-width: 680px;
-    margin: -80px auto 60px 12%;
+    margin: -80px auto 120px 12%;
     padding: 32px 38px;
     border-radius: 6px;
     position: relative;
@@ -322,8 +359,8 @@ body {
 
 .skills-title {
     position: relative;
-    margin-bottom: -780px;
-     right: -70px;
+    margin-bottom: -700px;
+     right: -200px;
 }
 
 .skills-title h2 {
@@ -331,11 +368,24 @@ body {
     font-size: 52px;
     display: inline-block;
     width: fit-content;
-    background: #d9d9d9;
+    background: #888888;
     padding: 6px 22px;
     transform: rotate(-3deg);
     position: relative;
-    z-index: 1;
+    z-index: 0;
+}
+
+.skills-title h2::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: -6px;
+    bottom: -4px;
+    background: #d9d9d9;
+    border-radius: 4px;
+    transform: rotate(4deg);
+    z-index: -1;
 }
 
 .skills-title .alt {
@@ -363,8 +413,8 @@ body {
     display: block;
     width: 420px;
     height: auto;
-    margin-top: 80px;
-    margin-left: 30px;
+    margin-top: 30px;
+    margin-left: -100px;
     
 }
 
@@ -394,7 +444,7 @@ body {
     background: #00aeef;
     color: #ffffff;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -406,6 +456,7 @@ body {
     align-items: center;
     gap: 10px;
     transition: transform 0.3s ease;
+    margin-left: 10px;
 }
 
 .ig-group:hover {
@@ -427,6 +478,32 @@ body {
     transform: scale(1.2);
 }
 
+.gh-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gh-group:hover {
+    transform: scale(1.1);
+}
+
+.gh-text {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.gh-icon {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.3s ease;
+}
+
+.gh-icon:hover {
+    transform: scale(1.2);
+}
+
 .phone-icon {
     width: 36px;
     height: 36px;
@@ -441,6 +518,7 @@ body {
     color: #ffffff;
     font-family: 'Anton', sans-serif;
     font-size: 28px;
+    margin-right: 10px;
     transition: transform 0.3s ease;
 }
 
@@ -454,15 +532,15 @@ body {
 }
 
 .mail-icon {
-    width: 36px;
-    height: 36px;
+    width: 100px;
+    height: 100px;
     transition: transform 0.3s ease;
 }
 
 .mail-link {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     text-decoration: none;
     color: #ffffff;
     font-family: 'Anton', sans-serif;
@@ -483,7 +561,7 @@ body {
 @media (max-width: 600px) {
     .top-menu {
         gap: 15px;
-        padding: 20px 10px;
+    padding: 30px 20px;
     }
     .top-menu a {
         font-size: 24px;
@@ -580,6 +658,8 @@ body {
 
 .contacts-white .ig-text,
 .contacts-white .ig-text h2,
+.contacts-white .gh-text,
+.contacts-white .gh-text h2,
 .contacts-white .phone-link,
 .contacts-white .phone-link span,
 .contacts-white .mail-link,
@@ -591,6 +671,10 @@ body {
 .contacts-white .contacts h2,
 .contacts-white h2 {
     color: #2e2e2e;
+}
+
+.contacts-white .gh-text h2 {
+    color: #ffffff;
 }
 
 .contacts-white .ig-group:hover {
