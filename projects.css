@@ -44,11 +44,25 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 30px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
 }
 
-.about-content p {
+.project-category h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    background: #2e2e2e;
+    padding: 10px 28px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.project-category p {
     font-family: 'Times New Roman', serif;
     font-size: 18px;
     color: #2e2e2e;
+    margin-top: 8px;
 }
