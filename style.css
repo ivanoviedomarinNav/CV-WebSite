@@ -426,7 +426,8 @@ body {
 .about-hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
     padding: 60px 60px 30px;
 }
 
@@ -440,6 +441,9 @@ body {
     width: 300px;
     height: auto;
     border-radius: 10px;
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 .about-content {
@@ -448,6 +452,17 @@ body {
     padding: 20px 30px 60px;
     font-size: 16px;
     line-height: 1.8;
+}
+
+.about-text-box {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-text-box strong {
+    color: #00aeef;
 }
 
 .contacts-white {
@@ -589,5 +604,8 @@ body {
     }
     .about-photo {
         width: 200px;
+    }
+    .about-text-box {
+        padding: 20px;
     }
 }
