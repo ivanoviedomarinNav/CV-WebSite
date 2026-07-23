@@ -25,7 +25,20 @@ body {
     padding: 20px 36px;
     border-radius: 6px;
     display: inline-block;
+    position: relative;
     animation: slide-in-left 1.2s ease-out;
+}
+
+.about-hero h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    right: -10px;
+    height: 100%;
+    background: #d9d9d9;
+    border-radius: 6px;
+    z-index: -1;
 }
 
 @keyframes slide-in-left {
