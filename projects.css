@@ -1,9 +1,13 @@
 /* ===== PROJECTS PAGE ===== */
 body {
     background: linear-gradient(to bottom, #ffffff 0%, #00aeef 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-hero {
+    flex: 1;
     text-align: center;
     padding: 60px 20px 40px;
 }
