@@ -413,153 +413,6 @@ body {
     font-size: 28px;
 }
 
-/* ===== ABOUT PAGE ===== */
-.about-page {
-    background: #ffffff;
-}
-
-.about-page .icon {
-    opacity: 0.15;
-    filter: invert(53%) sepia(82%) saturate(481%) hue-rotate(164deg) brightness(101%) contrast(92%);
-}
-
-.about-hero {
-    display: flex;
-    align-items: flex-end;
-    gap: 30px;
-    padding: 0px 20px 20px 50px;
-    margin-top: -90px;
-}
-
-.about-hero-left {
-    flex-shrink: 0;
-    margin-top: 160px;
-}
-
-.about-hero h1 {
-    font-family: 'Anton', sans-serif;
-    font-size: 52px;
-    color: #ffffff;
-    background: #00aeef;
-    padding: 12px 30px;
-    display: inline-block;
-    margin-left: 0;
-    transform: rotate(-5deg);
-}
-
-.about-hero-logos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-left: 920px;
-    margin-bottom: 20px;
-    margin-top: 160px;
-}
-
-.logo-box {
-    background: #00aeef;
-    padding: 14px 20px;
-    transform: rotate(3deg);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.logo-box:nth-child(2) {
-    transform: rotate(-2deg);
-    margin-top: 20px;
-    margin-left: -80px;
-}
-
-.about-logo {
-    width: 340px;
-    height: auto;
-    display: block;
-}
-
-.logo-box:nth-child(1) {
-    margin-left: 60px;
-    margin-top: -40px;
-}
-
-.about-content {
-    max-width: 700px;
-    margin: 0;
-    margin-left: 170px;
-    margin-top: 0px;
-    padding: 0 30px 60px 0;
-    position: relative;
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.about-photo-wrapper {
-    position: relative;
-    z-index: 2;
-    margin-left: 10px;
-    margin-bottom: -60px;
-}
-
-.about-photo {
-    width: 220px;
-    height: auto;
-    border-radius: 10px;
-    background: #ffffff;
-    padding: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.about-text-box {
-    background: #ffffff;
-    padding: 50px 35px 30px;
-    border-radius: 8px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-    position: relative;
-    z-index: 1;
-}
-
-.about-text-box strong {
-    color: #00aeef;
-}
-
-.contacts-white {
-    background: #00aeef;
-    border-top: 1px solid #ddd;
-    color: #ffffff;
-}
-
-.contacts-white .ig-text,
-.contacts-white .ig-text h2,
-.contacts-white .phone-link,
-.contacts-white .phone-link span,
-.contacts-white .mail-link,
-.contacts-white .mail-link span {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.contacts-white .contacts h2,
-.contacts-white h2 {
-    color: #2e2e2e;
-}
-
-.contacts-white .ig-group:hover {
-    transform: scale(1.1);
-}
-
-.contacts-white .phone-link:hover {
-    transform: scale(1.1);
-}
-
-.contacts-white .mail-link:hover {
-    transform: scale(1.1);
-}
-
-.contacts-white .phone-icon,
-.contacts-white .mail-icon,
-.contacts-white .insta-icon {
-    filter: none;
-}
-
 /* ===== RESPONSIVE (celulares) ===== */
 @media (max-width: 600px) {
     .top-menu {
@@ -650,29 +503,44 @@ body {
         width: 28px;
         height: 28px;
     }
-    .about-hero {
-        flex-direction: column;
-        padding: 40px 20px 20px;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    .about-hero h1 {
-        font-size: 36px;
-    }
-    .about-content {
-        padding: 0 15px 40px;
-    }
-    .about-photo-wrapper {
-        margin-left: 0;
-        margin-bottom: -40px;
-    }
-    .about-photo {
-        width: 150px;
-    }
-    .about-logo {
-        width: 80px;
-    }
-    .about-text-box {
-        padding: 40px 20px 20px;
-    }
+}
+
+/* ===== CONTACTS WHITE ===== */
+.contacts-white {
+    background: #00aeef;
+    border-top: 1px solid #ddd;
+    color: #ffffff;
+}
+
+.contacts-white .ig-text,
+.contacts-white .ig-text h2,
+.contacts-white .phone-link,
+.contacts-white .phone-link span,
+.contacts-white .mail-link,
+.contacts-white .mail-link span {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contacts-white .contacts h2,
+.contacts-white h2 {
+    color: #2e2e2e;
+}
+
+.contacts-white .ig-group:hover {
+    transform: scale(1.1);
+}
+
+.contacts-white .phone-link:hover {
+    transform: scale(1.1);
+}
+
+.contacts-white .mail-link:hover {
+    transform: scale(1.1);
+}
+
+.contacts-white .phone-icon,
+.contacts-white .mail-icon,
+.contacts-white .insta-icon {
+    filter: none;
 }
