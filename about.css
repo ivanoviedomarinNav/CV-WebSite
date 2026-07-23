@@ -3,6 +3,11 @@
     background: #ffffff;
 }
 
+.about-page .top-menu a {
+    background: #00aeef;
+    color: #ffffff;
+}
+
 .about-page .icon {
     opacity: 0.15;
     filter: invert(53%) sepia(82%) saturate(481%) hue-rotate(164deg) brightness(101%) contrast(92%);
