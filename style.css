@@ -122,13 +122,13 @@ body {
     z-index: 2;
     margin-left: 12%;
     margin-top: -10px;
-    animation: slide-in-right-flipped 1.2s ease-out;
+    animation: slide-in-flipped 1.2s ease-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes slide-in-right-flipped {
+@keyframes slide-in-flipped {
     0% {
-        transform: translateX(120%) scaleX(-1);
+        transform: translateX(-120%) scaleX(-1);
         opacity: 0;
     }
     100% {
