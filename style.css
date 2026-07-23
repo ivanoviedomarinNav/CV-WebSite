@@ -424,8 +424,14 @@ body {
 }
 
 .about-hero {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 30px;
     padding: 60px 20px 30px 50px;
+}
+
+.about-hero-left {
+    flex-shrink: 0;
 }
 
 .about-hero h1 {
@@ -437,6 +443,30 @@ body {
     display: inline-block;
     margin-left: 0;
     transform: rotate(-5deg);
+}
+
+.about-hero-logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-box {
+    background: #00aeef;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transform: rotate(3deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo-box:nth-child(2) {
+    transform: rotate(-2deg);
+}
+
+.about-logo {
+    width: 80px;
+    height: auto;
+    display: block;
 }
 
 .about-content {
@@ -608,7 +638,10 @@ body {
         height: 28px;
     }
     .about-hero {
+        flex-direction: column;
         padding: 40px 20px 20px;
+        align-items: flex-start;
+        gap: 15px;
     }
     .about-hero h1 {
         font-size: 36px;
@@ -622,6 +655,9 @@ body {
     }
     .about-photo {
         width: 150px;
+    }
+    .about-logo {
+        width: 50px;
     }
     .about-text-box {
         padding: 40px 20px 20px;
