@@ -6,6 +6,11 @@ body {
     flex-direction: column;
 }
 
+.top-menu a {
+    background: #00aeef;
+    color: #ffffff;
+}
+
 .about-hero {
     flex: 1;
     text-align: center;
