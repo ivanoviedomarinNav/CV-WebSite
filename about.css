@@ -9,7 +9,7 @@
 }
 
 .about-page .icon {
-    opacity: 0.15;
+    opacity: 1;
     filter: invert(53%) sepia(82%) saturate(481%) hue-rotate(164deg) brightness(101%) contrast(92%);
 }
 

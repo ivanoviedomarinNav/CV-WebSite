@@ -82,7 +82,7 @@ body {
 .icon {
     position: absolute;
     width: 50px;
-    opacity: 0.25;
+    opacity: 1;
     animation: float 4s ease-in-out infinite;
 }
 
