@@ -203,7 +203,11 @@
 .certifications-title {
     font-family: 'Anton', sans-serif;
     font-size: 40px;
-    color: #00aeef;
+    color: #ffffff;
+    background: #00aeef;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 6px;
 }
 
 /* ===== RESPONSIVE (celulares) ===== */
