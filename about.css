@@ -8,38 +8,33 @@
     filter: invert(53%) sepia(82%) saturate(481%) hue-rotate(164deg) brightness(101%) contrast(92%);
 }
 
-.about-hero {
+/* ===== HEADER: ABOUT ME + LOGOS ===== */
+.about-header {
     display: flex;
-    align-items: flex-end;
-    gap: 30px;
-    padding: 0px 20px 20px 50px;
-    margin-top: -90px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 60px 0;
 }
 
-.about-hero-left {
+.about-title-box {
     flex-shrink: 0;
-    margin-top: 160px;
 }
 
-.about-hero h1 {
+.about-title-box h1 {
     font-family: 'Anton', sans-serif;
     font-size: 52px;
     color: #ffffff;
     background: #00aeef;
     padding: 12px 30px;
     display: inline-block;
-    margin-left: 0;
     transform: rotate(-5deg);
 }
 
-.about-hero-logos {
+.about-logos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    margin-left: 920px;
-    margin-bottom: 20px;
-    margin-top: 160px;
 }
 
 .logo-box {
@@ -49,10 +44,14 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.logo-box:nth-child(1) {
+    margin-left: 60px;
+}
+
 .logo-box:nth-child(2) {
     transform: rotate(-2deg);
     margin-top: 20px;
-    margin-left: -80px;
+    margin-left: -20px;
 }
 
 .about-logo {
@@ -61,17 +60,11 @@
     display: block;
 }
 
-.logo-box:nth-child(1) {
-    margin-left: 60px;
-    margin-top: -40px;
-}
-
+/* ===== CONTENT: PHOTO + TEXT ===== */
 .about-content {
     max-width: 700px;
-    margin: 0;
-    margin-left: 170px;
-    margin-top: 0px;
-    padding: 0 30px 60px 0;
+    margin: 40px auto 0;
+    padding: 0 30px 60px;
     position: relative;
     font-size: 16px;
     line-height: 1.8;
@@ -108,17 +101,31 @@
 
 /* ===== RESPONSIVE (celulares) ===== */
 @media (max-width: 600px) {
-    .about-hero {
+    .about-header {
         flex-direction: column;
-        padding: 40px 20px 20px;
-        align-items: flex-start;
-        gap: 15px;
+        padding: 10px 20px 0;
+        gap: 20px;
     }
-    .about-hero h1 {
+    .about-title-box h1 {
         font-size: 36px;
+    }
+    .about-logos {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .about-logo {
+        width: 140px;
+    }
+    .logo-box:nth-child(1),
+    .logo-box:nth-child(2) {
+        margin-left: 0;
+        margin-top: 0;
+        transform: rotate(2deg);
     }
     .about-content {
         padding: 0 15px 40px;
+        margin-top: 30px;
     }
     .about-photo-wrapper {
         margin-left: 0;
@@ -126,9 +133,6 @@
     }
     .about-photo {
         width: 150px;
-    }
-    .about-logo {
-        width: 80px;
     }
     .about-text-box {
         padding: 40px 20px 20px;
