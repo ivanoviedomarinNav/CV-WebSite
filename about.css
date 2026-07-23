@@ -4,12 +4,12 @@
 }
 
 .about-page .top-menu a {
-    background: #29ABE2;
+    background: #7ec8e3;
     color: #ffffff;
 }
 
 .about-page .icon {
-    opacity: 1;
+    opacity: 0.15;
     filter: invert(53%) sepia(82%) saturate(481%) hue-rotate(164deg) brightness(101%) contrast(92%);
 }
 
