@@ -103,3 +103,19 @@ body {
     color: #2e2e2e;
     margin-top: 8px;
 }
+
+.in-progress {
+    max-width: 700px;
+    margin: 40px auto 40px 60px;
+    background: #d9534f;
+    padding: 40px 36px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.in-progress p {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+}
