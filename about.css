@@ -35,6 +35,8 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin-right: 150px;
+    margin-top: 60px;
 }
 
 .logo-box {
@@ -45,12 +47,12 @@
 }
 
 .logo-box:nth-child(1) {
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .logo-box:nth-child(2) {
     transform: rotate(-2deg);
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: -20px;
 }
 
@@ -62,9 +64,9 @@
 
 /* ===== CONTENT: PHOTO + TEXT ===== */
 .about-content {
-    max-width: 700px;
-    margin: 40px auto 0;
-    padding: 0 30px 60px;
+    max-width: 1000px;
+    margin: -420px 0 0 160px;
+    padding: 0 30px 30px;
     position: relative;
     font-size: 16px;
     line-height: 1.8;
@@ -93,10 +95,100 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
     position: relative;
     z-index: 1;
+    font-family: 'Times New Roman', serif;
 }
 
 .about-text-box strong {
     color: #00aeef;
+}
+
+.about-separator {
+    background: linear-gradient(to bottom, #00aeef 0%, #00aeef 60%, #ffffff 100%);
+    height: auto;
+    min-height: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.separator-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    margin: 20px 0 40px;
+}
+
+.career-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 60px;
+    width: 100%;
+}
+
+.career-category {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px 24px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.career-category h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    color: #00aeef;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #00aeef;
+}
+
+.career-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.career-items span {
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    color: #2e2e2e;
+    line-height: 1.4;
+}
+
+.comments-box {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 30px 40px;
+    margin: 60px 60px 0;
+    width: calc(100% - 120px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comments-box h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 28px;
+    color: #00aeef;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #00aeef;
+}
+
+.comments-box p {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    color: #2e2e2e;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.about-white-space {
+    background: #ffffff;
+    height: 30px;
+    width: 100%;
 }
 
 /* ===== RESPONSIVE (celulares) ===== */
