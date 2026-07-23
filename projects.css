@@ -1,4 +1,8 @@
 /* ===== PROJECTS PAGE ===== */
+body {
+    background: linear-gradient(to bottom, #ffffff 0%, #00aeef 100%);
+}
+
 .about-hero {
     text-align: center;
     padding: 60px 20px 40px;
