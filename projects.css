@@ -1,1 +1,28 @@
 /* ===== PROJECTS PAGE ===== */
+.about-hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.about-hero h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    background: #00aeef;
+    padding: 12px 40px;
+    display: inline-block;
+    transform: rotate(-3deg);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.about-content p {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    color: #2e2e2e;
+}
