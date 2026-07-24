@@ -11,6 +11,7 @@
 </head>
 <body class="about-page">
 
+    <div id="app">
     <div class="bg-icons">
         <img src="images/figma.svg" alt="" class="icon icon1">
         <img src="images/java.svg" alt="" class="icon icon2">
@@ -164,16 +165,41 @@
 
         <div class="comments-box">
             <h3>Comments</h3>
-            <p>My greatest aspiration is to continue growing professionally and apply my knowledge in a real work environment, whether in graphic design or programming. I am eager to take my first steps into the professional world and ready to bring creativity, dedication, and a strong willingness to learn to any team.</p>
-            <p>Although I am early in my career, I am confident in my skills and open to opportunities in any area where my abilities can add value. I would be truly grateful for the chance to collaborate with you and contribute to your team.</p>
-            <p>Thank you so much for your time and consideration. I look forward to the possibility of working together.</p>
+            <p>My greatest aspiration is to continue growing professionally and apply my knowledge in a real work environment, whether in graphic design or programming. I am eager to take my first steps into the professional world and ready to bring creativity, dedication, and a strong willingness to learn to any team. Although I am early in my career, I am confident in my skills and open to opportunities in any area where my abilities can add value. I would be truly grateful for the chance to collaborate with you and contribute to your team. Thank you so much for your time and consideration. I look forward to the possibility of working together.</p>
         </div>
     </div>
     <div class="about-white-space">
         <h2 class="certifications-title">Certifications</h2>
-        <div class="certification-card">
-            <h3>Google AI Essentials</h3>
-            <a href="images/ia certification.png" download class="cert-btn">Verification</a>
+
+        <div class="cert-category">
+            <button class="cert-category-btn" onclick="toggleCert(this)">
+                <span>AI Certifications</span>
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="cert-category-items">
+                <div class="certification-card">
+                    <h3>Google AI Essentials</h3>
+                    <a href="images/ia certification.png" download class="cert-btn">Verification</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cert-category">
+            <button class="cert-category-btn" onclick="toggleCert(this)">
+                <span>Design Certifications</span>
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="cert-category-items">
+            </div>
+        </div>
+
+        <div class="cert-category">
+            <button class="cert-category-btn" onclick="toggleCert(this)">
+                <span>Programming Certifications</span>
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="cert-category-items">
+            </div>
         </div>
     </div>
 
@@ -191,8 +217,31 @@
         </div>
         <a href="https://wa.me/50688368980" target="_blank" class="phone-link"><img src="images/telefono.svg" alt="Teléfono" class="phone-icon"><span>8836 8980</span></a>
     </footer>
+    <script>
+        function toggleCert(btn) {
+            const items = btn.nextElementSibling;
+            const isOpen = items.classList.contains('open');
 
-    <script src="script.js"></script>
+            document.querySelectorAll('.cert-category-items').forEach(el => el.classList.remove('open'));
+            document.querySelectorAll('.cert-category-btn').forEach(el => el.classList.remove('active'));
+
+            if (!isOpen) {
+                items.classList.add('open');
+                btn.classList.add('active');
+            }
+        }
+    </script>
+    </div>
+
+    <div class="sound-box muted" id="soundToggle">
+        <img src="images/sonido.svg" alt="Sound" class="sound-icon-on">
+        <img src="images/no sound.svg" alt="Sound Off" class="sound-icon-off">
+    </div>
+
+    <audio id="bgMusic" loop preload="auto" src="sound/memories.mp3"></audio>
+    <audio id="clickSound" preload="auto" src="sound/p5-select.mp3"></audio>
+
+    <script src="sounds.js"></script>
 
 </body>
 </html>

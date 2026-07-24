@@ -11,6 +11,7 @@
 </head>
 <body class="about-page">
 
+    <div id="app">
     <nav class="top-menu">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -45,8 +46,18 @@
         </div>
         <a href="https://wa.me/50688368980" target="_blank" class="phone-link"><img src="images/telefono.svg" alt="Teléfono" class="phone-icon"><span>8836 8980</span></a>
     </footer>
+    </div>
+
+    <div class="sound-box muted" id="soundToggle">
+        <img src="images/sonido.svg" alt="Sound" class="sound-icon-on">
+        <img src="images/no sound.svg" alt="Sound Off" class="sound-icon-off">
+    </div>
+
+    <audio id="bgMusic" loop preload="auto" src="sound/memories.mp3"></audio>
+    <audio id="clickSound" preload="auto" src="sound/p5-select.mp3"></audio>
 
     <script src="script.js"></script>
+    <script src="sounds.js"></script>
 
 </body>
 </html>

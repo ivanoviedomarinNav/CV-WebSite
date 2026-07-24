@@ -1,12 +1,17 @@
+function initCanvas() {
+if (window.canvasInterval) { clearInterval(window.canvasInterval); window.canvasInterval = null; }
 const canvas = document.getElementById('codeBackground');
+if (!canvas) return;
 const ctx = canvas.getContext('2d');
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = 1400;
 }
+if (window._resizeHandler) window.removeEventListener('resize', window._resizeHandler);
+window._resizeHandler = resizeCanvas;
 resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
+window.addEventListener('resize', window._resizeHandler);
 
 const characters = `
     <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
@@ -24,11 +29,9 @@ const characters = `
 const fontSize = 15;
 const columns = Math.floor(canvas.width / fontSize);
 
-// Cada columna guarda en qué altura (fila) va cayendo su carácter
 const drops = Array(columns).fill(0).map(() => Math.random() * -50);
 
 function draw() {
-    // Capa semitransparente para crear el efecto de "estela" al caer
 ctx.globalCompositeOperation = 'destination-out';
 ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -44,7 +47,6 @@ ctx.fillStyle = 'rgba(127, 212, 245, 0.5)';
 
         ctx.fillText(text, x, y);
 
-        // Cuando la columna llega abajo, la reinicia arriba (con algo de aleatoriedad)
         if (y > canvas.height && Math.random() > 0.985) {
             drops[i] = 0;
         }
@@ -52,4 +54,7 @@ ctx.fillStyle = 'rgba(127, 212, 245, 0.5)';
     }
 }
 
-setInterval(draw, 60);
+window.canvasInterval = setInterval(draw, 60);
+}
+
+initCanvas();
