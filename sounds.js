@@ -9,13 +9,6 @@ function updateUI() {
     soundToggle.classList.toggle('muted', !soundEnabled);
 }
 
-function playClick() {
-    if (!soundEnabled) return;
-    const s = clickSoundEl.cloneNode(true);
-    s.volume = 1;
-    s.play().catch(() => {});
-}
-
 soundToggle.addEventListener('click', function(e) {
     e.stopPropagation();
     soundEnabled = !soundEnabled;
@@ -26,7 +19,10 @@ soundToggle.addEventListener('click', function(e) {
 });
 
 // === SPA Navigation ===
-let pageCSS = [];
+var pageCSS = [];
+var app = document.getElementById('app');
+
+app.style.transition = 'opacity 0.15s ease';
 
 function getPageCSS(doc) {
     return Array.from(doc.querySelectorAll('link[rel="stylesheet"]'))
@@ -63,31 +59,36 @@ function navigateTo(url, pushState) {
     isNavigating = true;
     if (pushState === undefined) pushState = true;
 
-    fetch(url).then(function(r) { return r.text(); }).then(function(html) {
-        var doc = new DOMParser().parseFromString(html, 'text/html');
+    app.style.opacity = '0';
 
-        if (window.canvasInterval) { clearInterval(window.canvasInterval); window.canvasInterval = null; }
+    setTimeout(function() {
+        fetch(url).then(function(r) { return r.text(); }).then(function(html) {
+            var doc = new DOMParser().parseFromString(html, 'text/html');
 
-        var newApp = doc.getElementById('app');
-        var app = document.getElementById('app');
-        if (newApp && app) {
-            app.innerHTML = newApp.innerHTML;
-            reexecScripts(app);
-        }
+            if (window.canvasInterval) { clearInterval(window.canvasInterval); window.canvasInterval = null; }
 
-        swapCSS(getPageCSS(doc));
-        document.body.className = doc.body.className;
-        document.title = doc.title;
-        if (pushState) history.pushState({}, '', url);
+            var newApp = doc.getElementById('app');
+            if (newApp && app) {
+                app.innerHTML = newApp.innerHTML;
+                reexecScripts(app);
+            }
 
-        if (document.getElementById('codeBackground') && typeof initCanvas === 'function') {
-            initCanvas();
-        }
+            swapCSS(getPageCSS(doc));
+            document.body.className = doc.body.className;
+            document.title = doc.title;
+            if (pushState) history.pushState({}, '', url);
 
-        isNavigating = false;
-    }).catch(function() {
-        isNavigating = false;
-    });
+            if (document.getElementById('codeBackground') && typeof initCanvas === 'function') {
+                initCanvas();
+            }
+
+            app.style.opacity = '1';
+            isNavigating = false;
+        }).catch(function() {
+            app.style.opacity = '1';
+            isNavigating = false;
+        });
+    }, 150);
 }
 
 document.addEventListener('click', function(e) {
