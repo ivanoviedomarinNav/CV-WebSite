@@ -98,8 +98,7 @@ document.addEventListener('click', function(e) {
     if (!href || href.charAt(0) === '#' || href.startsWith('http') || href.startsWith('mailto:') || /\.(pdf|svg|mp3|png|jpg|jpeg|gif|css|js)$/i.test(href)) return;
 
     e.preventDefault();
-    playClick();
-    setTimeout(function() { navigateTo(href); }, 300);
+    navigateTo(href);
 });
 
 window.addEventListener('popstate', function() {
